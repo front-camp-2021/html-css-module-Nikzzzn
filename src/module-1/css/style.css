@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #f1efef;
+}
+section {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.8rem;
+    max-width: 0;
+}
+.product-card {
+    width: 400px;
+    height: 486px;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.product-card__img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.product-card__img img {
+    position: absolute;
+}
+.product-card__body {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+.product-card__info-wrapper {
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+}
+.product-card__rating {
+    width: 3rem;
+    background-color: #6F64F8;
+    border-radius: 3px;
+    padding: 0.375rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.product-card__rating span {
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.15rem;
+
+}
+.product-card__price {
+    color: #2C2C2C;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+.product-card__description h6 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    color: #2C2C2C;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.product-card__description p {    
+    color: #2C2C2C;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+.product-card__buttons {
+    display: flex;
+    height: 3rem;
+    font-weight: 600;
+}
+.product-card__button {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}    
+.product-card__button:hover {  
+    opacity: 0.7;
+}
+.product-card__button img {
+    margin-right: 0.5rem;
+}
+.product-card__button:first-of-type {
+    border-radius: 0 0 0 8px;
+}
+.product-card__button:last-of-type {
+    border-radius: 0 0 8px 0;
+}
+.product-card__button--white{
+    background-color: #EDEDED;
+}
+.product-card__button--violet {
+    background-color: #6F64F8;
+}
+.product-card__button--violet span {
+    color: white;
+}
