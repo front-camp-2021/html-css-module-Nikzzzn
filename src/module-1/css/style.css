@@ -9,10 +9,6 @@ body{
 section {
     margin-top: 30px;
     margin-left: 30px;
-    /*position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/   
 }
 .container {
     display: grid;
@@ -108,9 +104,6 @@ section {
 }
 .product-card__button:last-of-type {
     border-radius: 0 0 8px 0;
-}
-.wishlist {
-    
 }
 .product-card__button--white{
     background-color: #EDEDED;
